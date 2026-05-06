@@ -2,5 +2,6 @@
  - name: install httpd
    hosts: localhost
    connection: local
+   become: true
    roles:
            - httpd

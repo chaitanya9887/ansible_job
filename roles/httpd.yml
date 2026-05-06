@@ -1,6 +1,0 @@
----
- - name: install httpd
-   hosts: localhost
-   connection: local
-   roles:
-           - httpd

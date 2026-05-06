@@ -4,7 +4,6 @@
   dnf:
           name: httpd
           state: present
-  become: true        
 - name: Start and enable the service
   service:
           name: httpd

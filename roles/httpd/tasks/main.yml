@@ -1,0 +1,11 @@
+---
+# tasks file for httpd
+- name: install apache
+  yum:
+          name: httpd
+          state: present
+- name: Start and enable the service
+  service:
+          name: httpd
+          state: started
+          enabled: yes

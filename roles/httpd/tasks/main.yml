@@ -1,7 +1,7 @@
 ---
 # tasks file for httpd
 - name: install httpd
-  yum:
+  package:
           name: httpd
           state: present
 - name: Start and enable the service

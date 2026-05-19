@@ -1,0 +1,9 @@
+---
+- name: Gather facts from localhost
+  hosts: localhost
+  gather_facts: yes
+
+  tasks:
+    - name: Print hostname
+      debug:
+        var: ansible_hostname
